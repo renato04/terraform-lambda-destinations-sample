@@ -1,0 +1,8 @@
+*.zip
+
+.terraform*
+.terraform*/*
+.terraform.*
+terraform*
+
+vars.tfvars

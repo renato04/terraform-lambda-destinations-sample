@@ -1,0 +1,1 @@
+variable success_topic_arn {}
