@@ -1,0 +1,1 @@
+variable dynamo_metadata_table {}

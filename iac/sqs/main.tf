@@ -7,7 +7,7 @@ resource "aws_sqs_queue" "lambda_success" {
     name = "lambda_success_queue"
         redrive_policy = jsonencode({
             deadLetterTargetArn = aws_sqs_queue.lambda_success_dl.arn
-            maxReceiveCount     = 4
+            maxReceiveCount     = 3
      })
   
 }

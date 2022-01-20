@@ -31,3 +31,8 @@ module "metadata_lambda" {
       module.sqs
     ]
 }
+
+module "dynamodb" {
+  source = "./dynamodb"
+  dynamo_metadata_table = var.dynamo_metadata_table
+}
