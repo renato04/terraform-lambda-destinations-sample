@@ -26,7 +26,7 @@ def handle(event, context):
             put_metadata({
                 'ObjectKey' : f'{bucket_name}/{key}',
                 'LastModifiedTS': obj.last_modified.strftime('%Y-%m-%dT%H:%M:%S'),
-                'LastModifiedDay ': obj.last_modified.strftime('%Y-%m-%d'),
+                'LastModifiedDay': obj.last_modified.strftime('%Y-%m-%d'),
                 'ContentLength': obj.content_length,
                 'ContentType': obj.content_type,
                 'StorageClass': obj.storage_class
